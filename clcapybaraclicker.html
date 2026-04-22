@@ -21,9 +21,11 @@
   <meta name="robots" content="noindex">
 
 <body>
-  <script src="https://nebryx-cyber.github.io/vortex-games/vortex-save.js"></script>
+<script src="https://nebryx-cyber.github.io/vortex-games/vortex-save.js"></script>
 <script>
-  VortexSave.trackLaunch('capybara-clicker', 'Capybara Clicker');
+  if (typeof VortexSave !== 'undefined') {
+    VortexSave.trackLaunch('capybara-clicker', 'Capybara Clicker');
+  }
 </script>
   <link rel="stylesheet" href="game.css">
   <!--Game-->
